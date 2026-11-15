@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Environment variables & secrets (MongoDB URI, JWT secret, etc.)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data & process IDs
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+
+# Build & Dist output (if transpiling or bundling)
+dist/
+build/
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
