@@ -1,9 +1,15 @@
-const HomePage = () => {
-  return (
-    <div>
-      Home Page
-    </div>
-  )
-}
+import { useState } from "react";
+import Navbar from "../components/Navbar";
+import RateLimitedUi from "../components/RateLimitedUi";
 
-export default HomePage
+const HomePage = () => {
+  const [isRateLimited, setIsRateLimited] = useState(true);
+  return (
+    <div className="min-h-screen">
+      <Navbar />
+      {isRateLimited && <RateLimitedUi />}
+    </div>
+  );
+};
+
+export default HomePage;
